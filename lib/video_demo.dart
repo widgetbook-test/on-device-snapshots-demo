@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 
-/// A component backed by the platform `video_player` plugin.
-///
-/// The decoded frame is delivered via a platform texture — content that stays
-/// blank under `flutter test` and only appears on a real device/simulator.
+/// A component backed by the `video_player` plugin (blank under `flutter test`,
+/// rendered on a device/simulator).
 class VideoDemo extends StatefulWidget {
   const VideoDemo({super.key});
 

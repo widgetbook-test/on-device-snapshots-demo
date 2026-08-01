@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
-/// A plain Flutter component (no platform plugins). It renders fine headlessly,
-/// so it stays on the default `testWidgetbook` path in this demo.
+/// A plain Flutter component; it renders headlessly, so it stays on `testWidgetbook`.
 class LabelDemo extends StatelessWidget {
   const LabelDemo({super.key});
 

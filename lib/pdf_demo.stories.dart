@@ -19,8 +19,7 @@ final $Default = _Story(
   ],
 );
 
-/// `pdfrx` rasterizes the page asynchronously; `run` pumps frames until PDFium
-/// has painted before the snapshot is captured.
+/// pdfrx rasterizes asynchronously; pump frames until it has painted.
 Future<void> _waitForRender(WidgetTester tester) async {
   for (var i = 0; i < 20; i++) {
     await tester.pump(const Duration(milliseconds: 200));

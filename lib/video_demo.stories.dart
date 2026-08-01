@@ -41,9 +41,7 @@ final $Default = _Story(
   ],
 );
 
-/// `Scenario.run` receives a real [WidgetTester] on-device, so it can reach the
-/// running `video_player` controller and seek to a deterministic frame before
-/// the snapshot is taken.
+/// `run` drives the video_player controller to a deterministic frame on-device.
 Future<void> _seekTo(WidgetTester tester, Duration position) async {
   for (var i = 0; i < 40; i++) {
     await tester.pump(const Duration(milliseconds: 100));

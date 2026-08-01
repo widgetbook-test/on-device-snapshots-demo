@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:pdfrx/pdfrx.dart';
 
-/// A component backed by the `pdfrx` plugin (PDFium).
-///
-/// The page is rasterized natively and painted onto the Flutter canvas — blank
-/// under `flutter test`, rendered on a real device/simulator.
+/// A component backed by the `pdfrx` plugin (blank under `flutter test`,
+/// rendered on a device/simulator).
 class PdfDemo extends StatelessWidget {
   const PdfDemo({super.key});
 
