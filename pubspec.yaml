@@ -1,0 +1,33 @@
+name: on_device_snapshots_demo
+description: "Demo: capturing Widgetbook snapshots of native-plugin widgets (video_player, pdfrx) on a device/simulator via integration_test."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  video_player: ^2.13.0
+  pdfrx: ^2.4.7
+  widgetbook:
+    git:
+      url: https://github.com/widgetbook/widgetbook.git
+      ref: jens/wrk-20-on-device-snapshots
+      path: packages/widgetbook
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  build_runner: ^2.4.0
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/sample.mp4
+    - assets/sample.pdf
