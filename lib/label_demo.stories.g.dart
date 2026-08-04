@@ -21,8 +21,7 @@ final LabelDemoComponent = Component<LabelDemo, StoryArgs<LabelDemo>>(
   path: component.path ?? '',
   docsBuilder: component.docsBuilder,
   docComment:
-      r'''A plain Flutter component (no platform plugins). It renders fine headlessly,
-so it stays on the default `testWidgetbook` path in this demo.''',
+      r'''A plain Flutter component; it renders headlessly, so it stays on `testWidgetbook`.''',
   stories: [$Default..$generatedName = 'Default'],
 );
 typedef LabelDemoScenario = Scenario<LabelDemo, LabelDemoArgs>;

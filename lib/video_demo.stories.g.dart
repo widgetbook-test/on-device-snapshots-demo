@@ -20,10 +20,9 @@ final VideoDemoComponent = Component<VideoDemo, StoryArgs<VideoDemo>>(
   name: component.name ?? 'VideoDemo',
   path: component.path ?? '',
   docsBuilder: component.docsBuilder,
-  docComment: r'''A component backed by the platform `video_player` plugin.
-
-The decoded frame is delivered via a platform texture — content that stays
-blank under `flutter test` and only appears on a real device/simulator.''',
+  docComment:
+      r'''A component backed by the `video_player` plugin (blank under `flutter test`,
+rendered on a device/simulator).''',
   stories: [$Default..$generatedName = 'Default'],
 );
 typedef VideoDemoScenario = Scenario<VideoDemo, VideoDemoArgs>;

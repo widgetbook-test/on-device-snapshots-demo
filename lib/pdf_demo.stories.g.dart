@@ -20,10 +20,9 @@ final PdfDemoComponent = Component<PdfDemo, StoryArgs<PdfDemo>>(
   name: component.name ?? 'PdfDemo',
   path: component.path ?? '',
   docsBuilder: component.docsBuilder,
-  docComment: r'''A component backed by the `pdfrx` plugin (PDFium).
-
-The page is rasterized natively and painted onto the Flutter canvas — blank
-under `flutter test`, rendered on a real device/simulator.''',
+  docComment:
+      r'''A component backed by the `pdfrx` plugin (blank under `flutter test`,
+rendered on a device/simulator).''',
   stories: [$Default..$generatedName = 'Default'],
 );
 typedef PdfDemoScenario = Scenario<PdfDemo, PdfDemoArgs>;
