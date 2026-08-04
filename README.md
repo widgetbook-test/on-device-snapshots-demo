@@ -1,9 +1,14 @@
 # On-device Widgetbook snapshots
 
-A minimal demo of capturing Widgetbook snapshots for components that use
-platform-specific plugins — here [`video_player`](https://pub.dev/packages/video_player)
-and [`pdfrx`](https://pub.dev/packages/pdfrx) — which render **blank** under
-`flutter test`.
+A minimal demo of capturing Widgetbook snapshots for components that cannot
+render under `flutter test`:
+
+- platform plugins — [`video_player`](https://pub.dev/packages/video_player) and
+  [`pdfrx`](https://pub.dev/packages/pdfrx) render **blank**;
+- remote content — `flutter test` answers every HTTP request with an empty 400,
+  so network images fail to load.
+
+Both render normally on a device/simulator.
 
 ## Why
 
